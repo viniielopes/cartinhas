@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um simulador de cartas de League of Legends baseado no desempenho individual do player"
-    < title >League of Cards</title>
-    <link rel="stylesheet"type="text/css" href="style.css"
+    <meta name="description"
+        content="Um simulador de cartas de League of Legends baseado no desempenho individual do player">
+    <title>League
+        of Cards
+    </title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <h1 class="titulo">League of cards </h1>
-            <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-        <h2 class="buscar">Gere sua carta:</h2>
-        
-    </div class="centralizar">
-        <label >
-            <input class="regiao"list="RG" type="text"placeholder='Região'>
-                
+    <section class="container-cartinha">
+        <div class="centralizar">
+            <h1 class="titulo">League of cards </h1>
+            <h2 class="buscar">Gere sua carta:</h2>
+        </div>
 
-        </label>
+
+        <div class="container-inputs">
+
+            <label class="label-regiao">
+                <input class="input" list="RG" type="text" placeholder='Região'>
+            </label>
             <datalist class="RG" id="RG">
                 <option value="North america"></option>
                 <option value="Europa West"></option>
@@ -38,22 +45,33 @@
                 <option value="Vietnam"></option>
                 <option value="Thailand"></option>
             </datalist>
-        <label>
-        <input class="nome" type="text"placeholder="Nome de invocador" id="toggle" name="toggle"/>
-        
-    </div>
+            <label>
+                <input class="input nome" type="text" placeholder="Nome de invocador" id="nome" name="toggle" />
 
-    <h3 class="rodapé">"© Copyright 2013-2023 www.leagueofgraphs.com. All rights reserved.
-        LeagueOfGraphs.com isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc. Also available on Android."
-        </h3>
+        </div>
 
+        <div class="carta"></div>
+        <div class="container-button">
+            <button class="button-enviar" id="enviar">Enviar</button>
+        </div>
+
+
+        <footer>
+            <h3 class="rodape">© Copyright 2013-2023 www.leagueofgraphs.com. All rights reserved.
+                LeagueOfGraphs.com isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games
+                or
+                anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games
+                are
+                trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc. Also
+                available
+                on
+                Android.
+            </h3>
+
+        </footer>
+    </section>
 </body>
 
+<script src="main.js"></script>
 
-    <footer>
-
-
-    </footer>
-</body>
-
-</html> 
+</html>
