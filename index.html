@@ -9,9 +9,9 @@
     <title>League
         of Cards
     </title>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <div class="container-inputs">
 
             <label class="label-regiao">
-                <input class="input" list="RG" type="text" placeholder='Região'>
+                <input class="input" list="RG" type="text" placeholder='Região' value="Brazil">
             </label>
             <datalist class="RG" id="RG">
                 <option value="North america"></option>
@@ -50,7 +50,56 @@
 
         </div>
 
-        <div class="carta"></div>
+        <div class="carta">
+            <div class="carta-header">
+                <h1 id="nota-total">0</h1>
+                <h1 id="lane">0</h1>
+            </div>
+
+            <div class="container-campos">
+                <h1 class="nome" id="nick">Nome de invocador</h1>
+                <h1 class="elo" id="elo">Unranked</h1>
+
+                <div class="container-notas">
+                    <div class="notas-titulos">
+                        <p>
+                            Visão:
+                        </p>
+
+                        <p>
+                            Dano/Min:
+                        </p>
+
+                        <p>
+                            Participação:
+                        </p>
+
+                        <p>
+                            Farm:
+                        </p>
+                    </div>
+
+                    <div class="container-valores">
+                        <p class="valor" id="visao">
+                            0
+                        </p>
+
+                        <p class="valor" id="dano">
+                            0
+                        </p>
+
+                        <p class="valor" id="participacao">
+                            0
+                        </p>
+
+                        <p class="valor" id="farm">
+                            0
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container-button">
             <button class="button-enviar" id="enviar">Enviar</button>
         </div>
