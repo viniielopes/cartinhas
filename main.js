@@ -1,5 +1,9 @@
 const fetchPlayer = async (player) => {
-    const res = await fetch(`http://localhost:3001/?search=${player}`);
+    const res = await fetch(`https://9724-2804-868-d050-2ca-5b29-418c-265f-c51c.ngrok-free.app/?search=${player}`, {
+        headers:{
+            'ngrok-skip-browser-warning': true
+        }
+    });
     const data = await res.json();
 
     return data;
