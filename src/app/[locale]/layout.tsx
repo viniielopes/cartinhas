@@ -3,7 +3,6 @@ import Providers from "./Providers";
 import { NextIntlClientProvider, createTranslator, useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
-import "react-datepicker/dist/react-datepicker.css";
 import { VT323_FONT } from "../fonts";
 
 type Props = {
